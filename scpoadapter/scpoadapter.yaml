@@ -129,7 +129,7 @@ scpo:
   serviceInstance: "SCPO-CLUSTER"
   serviceNamedVersion: "SCPO-2020.1.0"
   ms:
-    enabled: "true"
+    enabled: "false"
     server:
       requester:
         config: "HTTPS_MS_Request_Configuration"
