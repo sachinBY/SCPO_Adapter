@@ -513,7 +513,7 @@ ack:
 ##########################################################
 bulk:
   notification:
-    enabled: "true"
+    enabled: "false"
   serviceName: "SCPO-GLOBAL"
   serviceType: "SCPO"
   serviceInstance: "SCPO-DALLAS"
