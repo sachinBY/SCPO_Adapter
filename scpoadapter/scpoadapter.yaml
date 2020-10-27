@@ -281,7 +281,8 @@ gs1:
     message: "forecast2Message"
     messageType: "forecast2"
     out:
-      message: "gs1"    
+      #message: "gs1"
+      message: "csv"
   dfutoskufcst:
     preprocessing: "true"
     message: "forecast2Message"
@@ -513,7 +514,8 @@ ack:
 ##########################################################
 bulk:
   notification:
-    enabled: "false"
+    #enabled: "false"
+    enabled: "true"
   serviceName: "SCPO-GLOBAL"
   serviceType: "SCPO"
   serviceInstance: "SCPO-DALLAS"
