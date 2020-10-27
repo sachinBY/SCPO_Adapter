@@ -513,7 +513,7 @@ ack:
 ##########################################################
 bulk:
   notification:
-    enabled: "false"
+    enabled: "true"
   serviceName: "SCPO-GLOBAL"
   serviceType: "SCPO"
   serviceInstance: "SCPO-DALLAS"
@@ -531,7 +531,7 @@ bulk:
     store:
       host:
       type: "Local File Store"
-      path: "//IN2-1026937LT/u/SCPO"
+      path: "//MD1NPDVJCE01.dev.corp.local/Tools/u/SCPO"
   callback:
     protocol: "FILE"
     ingestion:
