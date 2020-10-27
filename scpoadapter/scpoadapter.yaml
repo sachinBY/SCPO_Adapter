@@ -129,7 +129,7 @@ scpo:
   serviceInstance: "SCPO-CLUSTER"
   serviceNamedVersion: "SCPO-2020.1.0"
   ms:
-    enabled: "false"
+    enabled: "true"
     server:
       requester:
         config: "HTTPS_MS_Request_Configuration"
@@ -191,15 +191,15 @@ file:
     enabled: "true"
 inbound:
   archive:
-    path: C:/scpo-2019.1.1/messageArchive/inbound
+    path: C:/scpo-2020.2.0/messageArchive/inbound
 outbound:
   archive:
-    path: C:/scpo-2019.1.1/messageArchive/outbound
+    path: C:/scpo-2020.2.0/messageArchive/outbound
 eframework:
   applicationId: jda-scpo-adapter
   errorReport:
     enabled: "true"
-    errorReportPath: C:/scpo-2020.1.0/errorReports
+    errorReportPath: C:/scpo-2020.2.0/errorReports
     title: SCPO Adapter
     htmlTemplatePath: errorReportTemplate.html
     payload:
