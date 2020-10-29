@@ -278,11 +278,13 @@ gs1:
   fcst:
     in:
       table: "skuexternalfcst"    
-    message: "forecast2Message"
-    messageType: "forecast2"
+    #message: "forecast2Message"
+    #messageType: "forecast2"
+    message: "forecastMessage"
+    messageType: "forecast"
     out:
-      #message: "gs1"
-      message: "csv"
+      message: "gs1"
+      #message: "csv"
   dfutoskufcst:
     preprocessing: "true"
     message: "forecast2Message"
@@ -514,8 +516,8 @@ ack:
 ##########################################################
 bulk:
   notification:
-    #enabled: "false"
-    enabled: "true"
+    enabled: "false"
+    #enabled: "true"
   serviceName: "SCPO-GLOBAL"
   serviceType: "SCPO"
   serviceInstance: "SCPO-DALLAS"
