@@ -279,10 +279,10 @@ gs1:
   fcst:
     in:
       table: "skuexternalfcst"    
-    #message: "forecast2Message"
-    #messageType: "forecast2"
-    message: "forecastMessage"
-    messageType: "forecast"
+    message: "forecast2Message"
+    messageType: "forecast2"
+    #message: "forecastMessage"
+    #messageType: "forecast"
     out:
       message: "gs1"
       #message: "csv"
