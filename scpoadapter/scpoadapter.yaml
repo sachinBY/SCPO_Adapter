@@ -62,7 +62,6 @@ scpo:
 #
 ##########################################################
   cds:
-    #enabled: false
     enabled: true
         
 ##########################################################
@@ -281,11 +280,8 @@ gs1:
       table: "skuexternalfcst"    
     message: "forecast2Message"
     messageType: "forecast2"
-    #message: "forecastMessage"
-    #messageType: "forecast"
     out:
-      message: "gs1"
-      #message: "csv"
+      message: "gs1"    
   dfutoskufcst:
     preprocessing: "true"
     message: "forecast2Message"
@@ -341,8 +337,10 @@ gs1:
     planorder: "false"
     planpurch: "false"
     recship: "false"
+    dfumovingeventmap: "false"
     out:
       vehicleloadline: "false"
+    transmode: "false"
 
 ##########################################################
 #
@@ -383,6 +381,7 @@ gs1:
       dfueffprice: "DFUEFFPRICE"
       movingevent: "MOVINGEVENT"
       movingeventdata: "MOVINGEVENTDATA"
+      dfumovingeventmap: "DFUMOVINGEVENTMAP"
       vehicleload: "VEHICLELOAD"
       vehicleloadline: "VEHICLELOADLINE"
       planpurch: "PLANPURCH"
@@ -427,6 +426,8 @@ gs1:
       sourcing: "SOURCING"
       sourcingrequirement: "SOURCINGREQUIREMENT"
       sourcinguomconvfactor: "SOURCINGUOMCONVFACTOR"
+      transmode: "TRANSMODE"
+      transmodecap: "TRANSMODECAP"
       
                   
 ##########################################################
@@ -518,7 +519,6 @@ ack:
 bulk:
   notification:
     enabled: "false"
-    #enabled: "true"
   serviceName: "SCPO-GLOBAL"
   serviceType: "SCPO"
   serviceInstance: "SCPO-DALLAS"
